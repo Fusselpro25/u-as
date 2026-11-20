@@ -1,0 +1,24 @@
+html, body {
+  font-family: 'Inter', sans-serif;
+  background-color: #FAF9F7;
+  color: #2D2C28;
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+.font-serif {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+@keyframes slideInFromLeft {
+  0% { opacity: 0; transform: translateX(-34px); }
+  100% { opacity: 1; transform: translateX(0); }
+}
+.animate-slide-left {
+  animation: slideInFromLeft 0.75s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
